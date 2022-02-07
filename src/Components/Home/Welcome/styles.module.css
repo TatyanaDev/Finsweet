@@ -31,13 +31,14 @@
 .view_our_work {
   background-color: #fcd980;
   border-radius: 41px;
-  padding: 16px 56px;
   margin-right: 40px;
 }
 
 .view_our_work > a {
   font-family: "Poppins-SemiBold";
+  display: inline-block;
   font-style: normal;
+  padding: 16px 56px;
   line-height: 32px;
   color: #1b1c2b;
   font-weight: 600;
