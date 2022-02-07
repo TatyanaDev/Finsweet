@@ -1,0 +1,65 @@
+.container_welcome {
+  padding: 126px 160px 128px 160px;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.header {
+  font-family: "Poppins-SemiBold";
+  margin-bottom: 24px;
+  font-style: normal;
+  line-height: 74px;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 54px;
+}
+
+.content {
+  font-family: "Poppins-Medium";
+  margin-bottom: 48px;
+  font-style: normal;
+  line-height: 28px;
+  font-weight: 500;
+  color: #ffffff;
+  max-width: 562px;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.view_our_work {
+  background-color: #fcd980;
+  border-radius: 41px;
+  padding: 16px 56px;
+  margin-right: 40px;
+}
+
+.view_our_work > a {
+  font-family: "Poppins-SemiBold";
+  font-style: normal;
+  line-height: 32px;
+  color: #1b1c2b;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.view_pricing {
+  display: table;
+}
+
+.view_pricing > a {
+  font-family: "Poppins-Medium";
+  vertical-align: middle;
+  display: table-cell;
+  font-style: normal;
+  line-height: 28px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.view_pricing > a::after {
+  margin-left: 16px;
+  content: "→";
+}
