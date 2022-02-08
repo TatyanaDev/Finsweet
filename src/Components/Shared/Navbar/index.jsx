@@ -1,3 +1,4 @@
+import cn from 'classnames'
 import logo from './../../../images/icons/finsweet_logo.svg'
 import style from './styles.module.css'
 import NavItem from './NavItem'
@@ -5,7 +6,7 @@ import NavItem from './NavItem'
 export default function Navbar () {
   return (
     <article style={{ backgroundColor: '#1c1e53' }}>
-      <div className={style.container_navbar}>
+      <div className={cn('container', style.padding)}>
         <img src={logo} alt='finsweet' />
         <nav>
           <ul className={style.container_links}>

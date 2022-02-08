@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom'
+import cn from 'classnames'
 import illustration from './../../../images/home/Illustration.svg'
 import style from './styles.module.css'
 
 export default function Welcome () {
   return (
     <article style={{ backgroundColor: '#1c1e53' }}>
-      <div className={style.container_welcome}>
+      <div className={cn('container', style.padding)}>
         <div>
           <h1 className={style.header}>
             Building stellar websites for early startups

@@ -1,9 +1,5 @@
-.container_welcome {
+.padding {
   padding: 126px 160px 128px 160px;
-  justify-content: space-between;
-  max-width: 1600px;
-  margin: 0 auto;
-  display: flex;
 }
 
 .header {
