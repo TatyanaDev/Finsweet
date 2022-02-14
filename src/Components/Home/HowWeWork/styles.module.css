@@ -1,13 +1,7 @@
-.padding {
-  padding: 128px 257px 129px 165px;
-}
-
 .header {
   font-family: "Poppins-SemiBold";
   margin-bottom: 16px;
-  font-style: normal;
   line-height: 64px;
-  font-weight: 600;
   color: #282938;
   font-size: 48px;
 }
@@ -15,8 +9,6 @@
 .content {
   font-family: "Poppins-Regular";
   margin-bottom: 16px;
-  font-weight: normal;
-  font-style: normal;
   line-height: 28px;
   color: #282938;
   max-width: 405px;
@@ -26,9 +18,7 @@
 
 .link {
   font-family: "Poppins-Medium";
-  font-style: normal;
   line-height: 32px;
-  font-weight: 500;
   color: #2405f2;
   font-size: 18px;
 }
@@ -41,18 +31,14 @@
 .sub_header {
   font-family: "Poppins-Medium";
   margin-bottom: 8px;
-  font-style: normal;
   line-height: 48px;
   margin-top: 14px;
-  font-weight: 500;
   color: #282938;
   font-size: 32px;
 }
 
 .sub_content {
   font-family: "Poppins-Regular";
-  font-weight: normal;
-  font-style: normal;
   line-height: 28px;
   color: #282938;
   max-width: 303px;

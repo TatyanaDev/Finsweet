@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import cn from 'classnames'
 import pointer_1 from './../../../images/home/pointer_1.png'
 import pointer_2 from './../../../images/home/pointer_2.png'
 import pointer_3 from './../../../images/home/pointer_3.png'
@@ -10,7 +9,10 @@ import WorkCard from './WorkCard'
 export default function HowWeWork () {
   return (
     <article style={{ backgroundColor: '#f4f6fC' }}>
-      <div className={cn('container', style.padding)}>
+      <div
+        className='container_flex'
+        style={{ padding: '128px 257px 129px 165px' }}
+      >
         <div>
           <h1 className={style.header}>How we work</h1>
           <p className={style.content}>

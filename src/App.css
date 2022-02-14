@@ -12,24 +12,46 @@ a {
   text-decoration: none;
 }
 
-.container {
+.container_flex {
   justify-content: space-between;
   max-width: 1600px;
   margin: 0 auto;
   display: flex;
 }
 
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.flex {
+  justify-content: space-between;
+  display: flex;
+}
+
+.image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 @font-face {
-  font-family: "Poppins-Regular";
   src: url("../src/fonts/Poppins-Regular.ttf");
+  font-family: "Poppins-Regular";
+  font-style: normal;
+  font-weight: 400;
 }
 
 @font-face {
-  font-family: "Poppins-Medium";
   src: url("../src/fonts/Poppins-Medium.ttf");
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  font-weight: 500;
 }
 
 @font-face {
-  font-family: "Poppins-SemiBold";
   src: url("../src/fonts/Poppins-SemiBold.ttf");
+  font-family: "Poppins-SemiBold";
+  font-style: normal;
+  font-weight: 600;
 }

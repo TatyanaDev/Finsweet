@@ -1,13 +1,7 @@
-.padding {
-  padding: 126px 160px 128px 160px;
-}
-
 .header {
   font-family: "Poppins-SemiBold";
   margin-bottom: 24px;
-  font-style: normal;
   line-height: 74px;
-  font-weight: 600;
   color: #ffffff;
   font-size: 54px;
 }
@@ -15,9 +9,7 @@
 .content {
   font-family: "Poppins-Medium";
   margin-bottom: 48px;
-  font-style: normal;
   line-height: 28px;
-  font-weight: 500;
   color: #ffffff;
   max-width: 562px;
   font-size: 16px;
@@ -33,11 +25,9 @@
 .view_our_work > a {
   font-family: "Poppins-SemiBold";
   display: inline-block;
-  font-style: normal;
   padding: 16px 56px;
   line-height: 32px;
   color: #1b1c2b;
-  font-weight: 600;
   font-size: 18px;
 }
 
@@ -49,9 +39,7 @@
   font-family: "Poppins-Medium";
   vertical-align: middle;
   display: table-cell;
-  font-style: normal;
   line-height: 28px;
-  font-weight: 500;
   color: #ffffff;
   font-size: 16px;
 }
