@@ -1,0 +1,79 @@
+.header_container {
+  margin-bottom: 64px;
+  color: #282938;
+}
+
+.header {
+  font-family: "Poppins-SemiBold";
+  line-height: 64px;
+  font-size: 48px;
+}
+
+.link {
+  font-family: "Poppins-Medium";
+  line-height: 28px;
+  margin-top: 20px;
+  font-size: 16px;
+  color: inherit;
+}
+
+.workhubOffice {
+  background-image: url("./../../../images/home/workhubOffice.png");
+  height: 600px;
+  width: 843px;
+}
+
+.workhubOfficeInfoContainer {
+  background: linear-gradient(329.39deg, #1c1e53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+  padding: 312px 35px 76px 48px;
+  max-width: 396px;
+  min-height: 100%;
+}
+
+.projectTitles {
+  font-family: "Poppins-SemiBold";
+  line-height: 36px;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.workhubOfficeContent {
+  font-family: "Poppins-Medium";
+  margin-bottom: 40px;
+  line-height: 28px;
+  color: #ffffff;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.projectLinks {
+  font-family: "Poppins-Medium";
+  line-height: 28px;
+  color: #fcd980;
+  font-size: 16px;
+}
+
+.projectLinks::after,
+.link::after {
+  margin-left: 16px;
+  content: "→";
+}
+
+.websiteDesign {
+  background-image: url("./../../../images/home/websiteDesign.png");
+  margin-bottom: 32px;
+  height: 284px;
+  width: 405px;
+}
+
+.websiteDesignInfoContainer {
+  background: linear-gradient(329.39deg, #1c1e53 -10.96%, rgba(28, 30, 83, 0.42) 103.96%);
+  padding: 129px 100px 45px 56px;
+  min-height: 100%;
+}
+
+.joinOurChurch {
+  background-image: url("./../../../images/home/joinOurChurch.png");
+  height: 284px;
+  width: 405px;
+}
