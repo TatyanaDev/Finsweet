@@ -39,19 +39,16 @@ a {
   src: url("../src/fonts/Poppins-Regular.ttf");
   font-family: "Poppins-Regular";
   font-style: normal;
-  font-weight: 400;
 }
 
 @font-face {
   src: url("../src/fonts/Poppins-Medium.ttf");
   font-family: "Poppins-Medium";
   font-style: normal;
-  font-weight: 500;
 }
 
 @font-face {
   src: url("../src/fonts/Poppins-SemiBold.ttf");
   font-family: "Poppins-SemiBold";
   font-style: normal;
-  font-weight: 600;
 }

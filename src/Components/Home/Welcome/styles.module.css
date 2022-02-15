@@ -3,6 +3,7 @@
   margin-bottom: 24px;
   line-height: 74px;
   color: #ffffff;
+  font-weight: 600;
   font-size: 54px;
 }
 
@@ -12,6 +13,7 @@
   line-height: 28px;
   color: #ffffff;
   max-width: 562px;
+  font-weight: 500;
   font-size: 16px;
   opacity: 0.7;
 }
@@ -27,6 +29,7 @@
   display: inline-block;
   padding: 16px 56px;
   line-height: 32px;
+  font-weight: 600;
   color: #1b1c2b;
   font-size: 18px;
 }
@@ -40,6 +43,7 @@
   vertical-align: middle;
   display: table-cell;
   line-height: 28px;
+  font-weight: 500;
   color: #ffffff;
   font-size: 16px;
 }

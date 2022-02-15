@@ -6,12 +6,14 @@
 .header {
   font-family: "Poppins-SemiBold";
   line-height: 64px;
+  font-weight: 600;
   font-size: 48px;
 }
 
 .link {
   font-family: "Poppins-Medium";
   line-height: 28px;
+  font-weight: 500;
   margin-top: 20px;
   font-size: 16px;
   color: inherit;
@@ -33,6 +35,7 @@
 .projectTitles {
   font-family: "Poppins-SemiBold";
   line-height: 36px;
+  font-weight: 600;
   color: #ffffff;
   font-size: 24px;
 }
@@ -41,6 +44,7 @@
   font-family: "Poppins-Medium";
   margin-bottom: 40px;
   line-height: 28px;
+  font-weight: 500;
   color: #ffffff;
   font-size: 16px;
   opacity: 0.8;
@@ -49,6 +53,7 @@
 .projectLinks {
   font-family: "Poppins-Medium";
   line-height: 28px;
+  font-weight: 500;
   color: #fcd980;
   font-size: 16px;
 }
