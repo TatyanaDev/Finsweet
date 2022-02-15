@@ -1,8 +1,12 @@
+.containerHowWeWork {
+  padding: 128px 257px 129px 165px;
+  color: #282938;
+}
+
 .header {
   font-family: "Poppins-SemiBold";
   margin-bottom: 16px;
   line-height: 64px;
-  color: #282938;
   font-weight: 600;
   font-size: 48px;
 }
@@ -11,7 +15,6 @@
   font-family: "Poppins-Regular";
   margin-bottom: 16px;
   line-height: 28px;
-  color: #282938;
   font-weight: 400;
   max-width: 405px;
   font-size: 16px;
@@ -36,7 +39,6 @@
   margin-bottom: 8px;
   line-height: 48px;
   margin-top: 14px;
-  color: #282938;
   font-weight: 500;
   font-size: 32px;
 }
@@ -44,7 +46,6 @@
 .sub_content {
   font-family: "Poppins-Regular";
   line-height: 28px;
-  color: #282938;
   max-width: 303px;
   font-weight: 400;
   font-size: 16px;

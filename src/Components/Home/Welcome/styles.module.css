@@ -1,8 +1,12 @@
+.containerWelcome {
+  padding: 126px 160px 128px 160px;
+  color: #ffffff;
+}
+
 .header {
   font-family: "Poppins-SemiBold";
   margin-bottom: 24px;
   line-height: 74px;
-  color: #ffffff;
   font-weight: 600;
   font-size: 54px;
 }
@@ -11,7 +15,6 @@
   font-family: "Poppins-Medium";
   margin-bottom: 48px;
   line-height: 28px;
-  color: #ffffff;
   max-width: 562px;
   font-weight: 500;
   font-size: 16px;
@@ -44,8 +47,8 @@
   display: table-cell;
   line-height: 28px;
   font-weight: 500;
-  color: #ffffff;
   font-size: 16px;
+  color: inherit;
 }
 
 .view_pricing > a::after {
