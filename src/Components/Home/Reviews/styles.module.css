@@ -1,0 +1,49 @@
+.containerReviews {
+  padding: 130px 160px;
+  color: #282938;
+}
+
+.header {
+  font-family: "Poppins-SemiBold";
+  margin-bottom: 16px;
+  line-height: 56px;
+  font-weight: 600;
+  font-size: 38px;
+  opacity: unset !important;
+}
+
+.content {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  line-height: 28px;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.contentReview {
+  font-family: "Poppins-Medium";
+  margin-bottom: 48px;
+  line-height: 48px;
+  min-height: 240px;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.imgReview {
+  margin-right: 10px;
+  max-height: 52px;
+}
+
+.nameReview {
+  font-family: "Poppins-Medium";
+  line-height: 32px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.emailReview {
+  font-family: "Poppins-Medium";
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 12px;
+}

@@ -3,6 +3,7 @@ import HowWeWork from '../../Components/Home/HowWeWork'
 import Features from '../../Components/Home/Features'
 import Navbar from '../../Components/Shared/Navbar'
 import Welcome from '../../Components/Home/Welcome'
+import Reviews from '../../Components/Home/Reviews'
 
 export default function Home () {
   return (
@@ -11,7 +12,8 @@ export default function Home () {
       <Welcome />
       <HowWeWork />
       <OurProjects />
-      <Features/>
+      <Features />
+      <Reviews />
     </>
   )
 }
