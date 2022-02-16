@@ -94,8 +94,8 @@
   line-height: 32px;
   min-width: 432px;
   font-weight: 500;
-  color: #ffffff;
   font-size: 18px;
+  color: inherit;
 }
 
 .link::after {
