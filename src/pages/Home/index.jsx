@@ -1,3 +1,4 @@
+import WebsiteDevelopment from '../../Components/Home/WebsiteDevelopment'
 import QuestionsAsked from '../../Components/Home/QuestionsAsked'
 import OurProjects from '../../Components/Home/OurProjects'
 import HowWeWork from '../../Components/Home/HowWeWork'
@@ -16,6 +17,7 @@ export default function Home () {
       <Features />
       <Reviews />
       <QuestionsAsked />
+      <WebsiteDevelopment />
     </>
   )
 }

@@ -1,0 +1,104 @@
+.containerWebsiteDevelopment {
+  padding: 0px 162px 0px 158px;
+  color: #ffffff;
+}
+
+.backgroundImage {
+  background-image: url("./../../../images/home/womanWritingOnPaper.png");
+  height: 691px;
+  width: 656px;
+}
+
+.background {
+  background-color: rgba(28, 30, 83, 0.5);
+  padding: 96px;
+  height: 100%;
+}
+
+.headerWebsiteDevelopment {
+  font-family: "Poppins-SemiBold";
+  margin-bottom: 24px;
+  line-height: 74px;
+  font-weight: 600;
+  font-size: 54px;
+}
+
+.contentWebsiteDevelopment {
+  font-family: "Poppins-Medium";
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.backgroundForm {
+  padding: 96px 96px 39px 96px;
+  background-color: #1c1e53;
+}
+
+.headerForm {
+  font-family: "Poppins-Medium";
+  margin-bottom: 16px;
+  line-height: 48px;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.contentForm {
+  font-family: "Poppins-Medium";
+  margin-bottom: 40px;
+  line-height: 28px;
+  max-width: 432px;
+  font-weight: 500;
+  color: #f4f6fc;
+  font-size: 16px;
+}
+
+.input {
+  border: 1.5px solid rgba(255, 255, 255, 0.05);
+  font-family: "Poppins-Regular";
+  background-color: #1c1e53;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 16px;
+  padding: 18px 32px;
+  border-radius: 8px;
+  line-height: 28px;
+  color: #f4f6fc;
+  font-size: 16px;
+  opacity: 0.5;
+  width: 100%;
+}
+
+.input:last-of-type {
+  margin-bottom: 39px;
+}
+
+.submitButton {
+  font-family: "Poppins-SemiBold";
+  background: #fcd980;
+  padding: 16px 144px;
+  border-radius: 41px;
+  margin-bottom: 28px;
+  line-height: 32px;
+  color: #1b1c2b;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+}
+
+.link {
+  font-family: "Poppins-Medium";
+  display: inline-block;
+  text-align: center;
+  line-height: 32px;
+  min-width: 432px;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.link::after {
+  margin-left: 16px;
+  content: "→";
+}
