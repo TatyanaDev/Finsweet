@@ -12,7 +12,7 @@ export default function Reviews () {
   const [, setLoading] = useState(true)
 
   useEffect(() => {
-    fetch('https://jsonplaceholder.typicode.com/comments?_limit=5')
+    fetch('https://jsonplaceholder.typicode.com/users?_limit=5')
       .then(res => {
         if (res.ok) {
           return res.json()
@@ -50,8 +50,10 @@ export default function Reviews () {
             modules={[Pagination, Navigation]}
           >
             {reviews.map(review => (
-              <SwiperSlide>
-                <p className={style.contentReview}>"{review.body}."</p>
+              <SwiperSlide key={review.id}>
+                <p className={style.contentReview}>
+                  "{review.company.catchPhrase}."
+                </p>
                 <div style={{ display: 'flex' }}>
                   <img
                     src={profilePhoto}

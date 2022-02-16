@@ -42,7 +42,7 @@
   height: 48px;
   left: 735px;
   width: 48px;
-  top: 315px;
+  top: 215px;
 }
 
 .swiper-button-prev:active,
@@ -63,7 +63,7 @@
   height: 48px;
   width: 48px;
   right: 1px;
-  top: 315px;
+  top: 215px;
 }
 
 .swiper-button-next:after,
