@@ -1,0 +1,83 @@
+.logo {
+  margin-bottom: 22px;
+  min-height: 38px;
+}
+
+.footerContent {
+  font-family: "Poppins-Medium";
+  margin-bottom: 86px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 500;
+  max-width: 399px;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.contactBlock {
+  padding: 17px 137px 17px 37px;
+  background-color: #fcd980;
+  min-width: 517px;
+  color: #282938;
+}
+
+.contactHeaders {
+  font-family: "Poppins-Medium";
+  margin-bottom: 1px;
+  line-height: 32px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.contactContent {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  line-height: 28px;
+  font-size: 16px;
+  color: inherit;
+  opacity: 0.8;
+}
+
+.header {
+  font-family: "Poppins-SemiBold";
+  margin-bottom: 14px;
+  line-height: 64px;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 48px;
+}
+
+.content {
+  font-family: "Poppins-Regular";
+  margin-bottom: 28px;
+  font-weight: normal;
+  line-height: 28px;
+  color: #f4f6fc;
+  max-width: 399px;
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.containerNavbar {
+  padding: 32px 160px;
+  color: #282938;
+}
+
+.brand {
+  font-family: "Poppins-Medium";
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.link {
+  margin-left: 32px;
+}
+
+.link > a {
+  font-family: "Poppins-Medium";
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 16px;
+  color: inherit;
+}

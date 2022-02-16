@@ -2,6 +2,7 @@ import WebsiteDevelopment from '../../Components/Home/WebsiteDevelopment'
 import QuestionsAsked from '../../Components/Home/QuestionsAsked'
 import OurProjects from '../../Components/Home/OurProjects'
 import HowWeWork from '../../Components/Home/HowWeWork'
+import Footer from './../../Components/Shared/Footer'
 import Features from '../../Components/Home/Features'
 import Navbar from '../../Components/Shared/Navbar'
 import Welcome from '../../Components/Home/Welcome'
@@ -20,6 +21,7 @@ export default function Home () {
       <QuestionsAsked />
       <WebsiteDevelopment />
       <OurBlog />
+      <Footer />
     </>
   )
 }
