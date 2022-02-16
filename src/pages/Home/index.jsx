@@ -6,6 +6,7 @@ import Features from '../../Components/Home/Features'
 import Navbar from '../../Components/Shared/Navbar'
 import Welcome from '../../Components/Home/Welcome'
 import Reviews from '../../Components/Home/Reviews'
+import OurBlog from '../../Components/Home/OurBlog'
 
 export default function Home () {
   return (
@@ -18,6 +19,7 @@ export default function Home () {
       <Reviews />
       <QuestionsAsked />
       <WebsiteDevelopment />
+      <OurBlog />
     </>
   )
 }

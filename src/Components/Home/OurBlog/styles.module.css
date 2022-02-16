@@ -1,0 +1,51 @@
+.containerOurBlog {
+  padding: 128px 162px 128px 158px;
+  color: #282938;
+}
+
+.header {
+  font-family: "Poppins-SemiBold";
+  margin-bottom: 64px;
+  line-height: 64px;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.blogDate {
+  font-family: "Poppins-Medium";
+  margin-bottom: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.blogTitle {
+  font-family: "Poppins-Medium";
+  margin-bottom: 16px;
+  line-height: 36px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.blogContent {
+  font-family: "Poppins-Regular";
+  margin-bottom: 32px;
+  font-weight: normal;
+  line-height: 28px;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.link {
+  font-family: "Poppins-Medium";
+  line-height: 28px;
+  font-weight: 500;
+  font-size: 16px;
+  color: inherit;
+}
+
+.link::after {
+  margin-left: 12px;
+  content: "→";
+}
