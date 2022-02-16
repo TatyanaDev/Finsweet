@@ -1,0 +1,22 @@
+.containerQuestionsAsked {
+  padding: 128px 162px 100px 158px;
+  color: #282938;
+}
+
+.header {
+  font-family: "Poppins-SemiBold";
+  margin-bottom: 16px;
+  line-height: 56px;
+  max-width: 328px;
+  font-weight: 600;
+  font-size: 38px;
+}
+
+.link {
+  font-family: "Poppins-Medium";
+  line-height: 32px;
+  color: #2405f2;
+  font-weight: 500;
+  font-size: 18px;
+  opacity: 0.87;
+}

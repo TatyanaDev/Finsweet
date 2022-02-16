@@ -1,0 +1,62 @@
+.accordion {
+  width: 843px;
+}
+
+.accordion__item:not(:last-of-type) {
+  border-bottom: 2px solid #ececf1;
+}
+
+.accordion__button {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  line-height: 36px;
+  font-weight: 500;
+  text-align: left;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 32px;
+  border: none;
+}
+
+.accordion__button > span:last-child::after {
+  font-family: "Poppins-Regular";
+  display: inline-block;
+  opacity: 0.7;
+  height: 16px;
+  width: 16px;
+  content: "+";
+}
+
+.accordion__button[aria-expanded="true"] > span:last-child::after,
+.accordion__button[aria-selected="true"] > span:last-child::after {
+  transform: rotate(-45deg);
+}
+
+[hidden] {
+  display: none;
+}
+
+.accordion__panel {
+  animation: fadein 0.35s ease-in;
+  font-family: "Poppins-Medium";
+  padding: 0px 0px 48px 115px;
+  line-height: 32px;
+  max-width: 750px;
+  font-weight: 500;
+  font-size: 18px;
+  opacity: 0.87;
+}
+
+/* -------------------------------------------------- */
+/* ---------------- Animation part ------------------ */
+/* -------------------------------------------------- */
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
