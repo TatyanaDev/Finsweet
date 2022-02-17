@@ -5,6 +5,7 @@ import cn from 'classnames'
 import 'swiper/css'
 import profilePhoto from './../../../images/home/profilePhoto.png'
 import style from './styles.module.css'
+import './navigation.css'
 
 export default function Reviews () {
   const [reviews, setReviews] = useState([])

@@ -1,7 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
-import './navigation.css'
-import './fancy.css'
 import './App.css'
 
 export default function App () {

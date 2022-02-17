@@ -9,6 +9,7 @@ import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import cn from 'classnames'
 import style from './styles.module.css'
+import './fancy.css'
 
 export default function QuestionsAsked () {
   const [questions, setQuestions] = useState([])
@@ -46,28 +47,26 @@ export default function QuestionsAsked () {
             Contact us for more info
           </Link>
         </div>
-        <div>
-          <Accordion allowZeroExpanded>
-            {questions.map((question, id) => (
-              <AccordionItem key={question.id}>
-                <AccordionItemHeading>
-                  <AccordionItemButton>
-                    <span className='flex'>
-                      <span>
-                        <span style={{ color: '#2405f2 ', marginRight: 53 }}>
-                          0{id + 1}
-                        </span>
-                        <span>{question.title}</span>
+        <Accordion allowZeroExpanded>
+          {questions.map((question, id) => (
+            <AccordionItem key={question.id}>
+              <AccordionItemHeading>
+                <AccordionItemButton>
+                  <span className='flex'>
+                    <span>
+                      <span style={{ color: '#2405f2 ', marginRight: 53 }}>
+                        0{id + 1}
                       </span>
-                      <span></span>
+                      <span>{question.title}</span>
                     </span>
-                  </AccordionItemButton>
-                </AccordionItemHeading>
-                <AccordionItemPanel>{question.body}</AccordionItemPanel>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
+                    <span></span>
+                  </span>
+                </AccordionItemButton>
+              </AccordionItemHeading>
+              <AccordionItemPanel>{question.body}</AccordionItemPanel>
+            </AccordionItem>
+          ))}
+        </Accordion>
       </div>
     </article>
   )

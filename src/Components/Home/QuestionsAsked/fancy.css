@@ -32,10 +32,6 @@
   transform: rotate(-45deg);
 }
 
-[hidden] {
-  display: none;
-}
-
 .accordion__panel {
   animation: fadein 0.35s ease-in;
   font-family: "Poppins-Medium";
