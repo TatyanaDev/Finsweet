@@ -1,16 +1,26 @@
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Pagination, Navigation } from 'swiper'
-import { useState, useEffect } from 'react'
+import { connect } from 'react-redux'
+import { useEffect } from 'react'
 import cn from 'classnames'
 import 'swiper/css'
+import {
+  getReviewsRequest,
+  getReviewsSuccess,
+  getReviewsError
+} from './../../../store/actions'
 import profilePhoto from './../../../images/home/profilePhoto.png'
 import style from './styles.module.css'
 import './navigation.css'
 
-export default function Reviews () {
-  const [reviews, setReviews] = useState([])
-  const [error, setError] = useState(null)
-  const [, setLoading] = useState(true)
+function Reviews (props) {
+  const {
+    reviews,
+    errorReviews,
+    getReviewsSuccessAction,
+    setErrorReviewsAction,
+    getReviewsRequestAction
+  } = props
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users?_limit=5')
@@ -20,19 +30,15 @@ export default function Reviews () {
         }
         throw res
       })
-      .then(data => {
-        setReviews(data)
+      .then(dataReviews => getReviewsSuccessAction(dataReviews))
+      .catch(errReviews => {
+        console.error('Error fetching data:', errReviews)
+        setErrorReviewsAction(errReviews)
       })
-      .catch(err => {
-        console.error('Error fetching data:', err)
-        setError(err)
-      })
-      .finally(() => {
-        setLoading(false)
-      })
-  }, [])
+      .finally(() => getReviewsRequestAction())
+  }, [getReviewsSuccessAction, setErrorReviewsAction, getReviewsRequestAction])
 
-  if (error) return 'Review loading error...'
+  if (errorReviews) return 'Review loading error...'
 
   return (
     <article style={{ backgroundColor: 'rgba(244,246,252, 0.5)' }}>
@@ -74,3 +80,17 @@ export default function Reviews () {
     </article>
   )
 }
+
+const mapStateToProps = ({ objReviews: { reviews, errorReviews } }) => ({
+  reviews,
+  errorReviews
+})
+
+const mapDispatchToProps = dispatch => ({
+  getReviewsRequestAction: () => dispatch(getReviewsRequest()),
+  getReviewsSuccessAction: dataReviews =>
+    dispatch(getReviewsSuccess(dataReviews)),
+  setErrorReviewsAction: errReviews => dispatch(getReviewsError(errReviews))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Reviews)

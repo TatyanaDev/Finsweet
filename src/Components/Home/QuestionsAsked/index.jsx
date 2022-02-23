@@ -5,16 +5,26 @@ import {
   AccordionItem,
   Accordion
 } from 'react-accessible-accordion'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 import cn from 'classnames'
+import {
+  getQuestionsRequest,
+  getQuestionsSuccess,
+  getQuestionsError
+} from './../../../store/actions'
 import style from './styles.module.css'
 import './fancy.css'
 
-export default function QuestionsAsked () {
-  const [questions, setQuestions] = useState([])
-  const [error, setError] = useState(null)
-  const [, setLoading] = useState(true)
+function QuestionsAsked (props) {
+  const {
+    questions,
+    errorQuestions,
+    getQuestionsSuccessAction,
+    getQuestionsErrorAction,
+    getQuestionsRequestAction
+  } = props
 
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts?_start=3&&_limit=5')
@@ -24,19 +34,19 @@ export default function QuestionsAsked () {
         }
         throw res
       })
-      .then(data => {
-        setQuestions(data)
+      .then(dataQuestions => getQuestionsSuccessAction(dataQuestions))
+      .catch(errQuestions => {
+        console.error('Error fetching data:', errQuestions)
+        getQuestionsErrorAction(errQuestions)
       })
-      .catch(err => {
-        console.error('Error fetching data:', err)
-        setError(err)
-      })
-      .finally(() => {
-        setLoading(false)
-      })
-  }, [])
+      .finally(() => getQuestionsRequestAction())
+  }, [
+    getQuestionsRequestAction,
+    getQuestionsSuccessAction,
+    getQuestionsErrorAction
+  ])
 
-  if (error) return 'Questions loading error...'
+  if (errorQuestions) return 'Questions loading error...'
 
   return (
     <article>
@@ -71,3 +81,18 @@ export default function QuestionsAsked () {
     </article>
   )
 }
+
+const mapStateToProps = ({ objQuestions: { questions, errorQuestions } }) => ({
+  questions,
+  errorQuestions
+})
+
+const mapDispatchToProps = dispatch => ({
+  getQuestionsRequestAction: () => dispatch(getQuestionsRequest()),
+  getQuestionsSuccessAction: dataQuestions =>
+    dispatch(getQuestionsSuccess(dataQuestions)),
+  getQuestionsErrorAction: errQuestions =>
+    dispatch(getQuestionsError(errQuestions))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(QuestionsAsked)
