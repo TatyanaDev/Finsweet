@@ -1,6 +1,6 @@
 import cn from 'classnames'
 import instagram from './../../../images/icons/instagram.svg'
-import logo from './../../../images/icons/finsweet_logo.svg'
+import logo from './../../../images/icons/finsweetLogo.svg'
 import facebook from './../../../images/icons/facebook.svg'
 import linkedin from './../../../images/icons/linkedIn.svg'
 import twitter from './../../../images/icons/twitter.svg'

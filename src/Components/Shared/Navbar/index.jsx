@@ -1,4 +1,4 @@
-import logo from './../../../images/icons/finsweet_logo.svg'
+import logo from './../../../images/icons/finsweetLogo.svg'
 import style from './styles.module.css'
 import NavItem from './NavItem'
 
